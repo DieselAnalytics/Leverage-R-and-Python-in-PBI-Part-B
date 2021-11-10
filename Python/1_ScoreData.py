@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 from sklearn import preprocessing
 
-os.chdir("C:/Users/ryanwade44/Documents/UKPBI/Script/")
+os.chdir("<path to root folder>")
 
 model = joblib.load("./Models/model_Python.pkl")
 boston_housing = pd.read_csv("./Data/BostonHousingInfo.csv")
