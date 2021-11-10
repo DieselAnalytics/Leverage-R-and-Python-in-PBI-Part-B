@@ -1,6 +1,6 @@
 ####################################################################################
 # Set dataset variable
-setwd("C:/Users/ryanwade44/Documents/UKPBI/Script")
+setwd("<path to root folder>")
 dataset = read.csv("./Data/dataset_demandforecasting.csv")
 ####################################################################################
 
@@ -23,7 +23,7 @@ library(cowplot)
 # it will be set to false.
 currentColumns <- sort(colnames(dataset))
 requiredColumns <- 
-  c("DateKey", "Forecast End Date", "Predicted_Sales", "Predicted_Sales_Lower", 
+  c("DateKey", "Forecast_End_Date", "Predicted_Sales", "Predicted_Sales_Lower", 
     "Predicted_Sales_Upper", "ProductName", "Sales", "StoreName", "Trend", 
     "Trend_Lower", "Trend_Upper", "Weekly_Seasonality", "Yearly_Seasonality")
 columnTest <- isTRUE(all.equal(currentColumns, requiredColumns))
@@ -34,7 +34,7 @@ Store <- unique(dataset$StoreName)
 Product <- unique(dataset$ProductName)
 
 # Get the forecast end date that was passed to R from Power BI
-ForecastEndDate <-unique(dataset$`Forecast End Date`)
+ForecastEndDate <-unique(dataset$`Forecast_End_Date`)
 
 # Performs the data validation test. If it is paassed then code is excecuted that generates the 
 # forecast plots. Otherwise, a blank chart is displayed with information about why R was not able 
