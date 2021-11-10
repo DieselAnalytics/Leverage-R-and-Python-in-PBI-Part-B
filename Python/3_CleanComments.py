@@ -10,6 +10,6 @@ def mask_text (unmask_text):
     cleanned_text = re.sub(ssn_pattern, "XXX-XX-XXXX", cleanned_text)
     return cleanned_text
 
-os.chdir("<path to folder that contains the Comments.csv file")
-df = pd.read_csv("Comments.csv")
-df.Comment = df.Comment.apply(mask_text)
+os.chdir("<path to root folder>")
+df = pd.read_csv("./Data/Comments.csv")
+df["RevisedComment"] = df.Comment.apply(mask_text)
