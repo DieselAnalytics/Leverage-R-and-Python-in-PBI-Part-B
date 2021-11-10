@@ -2,7 +2,7 @@ library(tidyverse)
 library(stringr)
 library(lubridate)
 
-setwd("C:/Users/ryanwade44/Documents/UKPBI/Script")
+setwd("<path to root folder>")
 dfTweets <- read_csv("./Data/Tweets.csv")
 
 # Regular expression to identify the string patterns that needs to be remvoed
