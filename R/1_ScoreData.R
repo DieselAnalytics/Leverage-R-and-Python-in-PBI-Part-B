@@ -1,6 +1,6 @@
 library(tidyverse)
 
-setwd("C:/Users/ryanwade44/Documents/UKPBI/Script")
+setwd("<path to root folder>")
 model <- readRDS("./Models/model_R.rds")
 boston_housing <- read_csv("./Data/BostonHousingInfo.csv")
 
