@@ -1,6 +1,6 @@
 ####################################################################################
 # Set dataset variable
-setwd("C:/Users/ryanwade44/Documents/UKPBI/Script")
+setwd("<path to root folder>")
 dataset = read.csv("./Data/dataset_quadchart.csv")
 ####################################################################################
 
