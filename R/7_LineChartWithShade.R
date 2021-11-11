@@ -1,7 +1,7 @@
 ####################################################################################
 # Set dataset variable
-setwd("C:/Users/ryanwade44/Documents/UKPBI/Script/")
-dataset = read_csv("./Data/dataset_shade.csv")
+setwd("<path to root folder>")
+dataset = read.csv("./Data/dataset_shade.csv")
 ####################################################################################
 
 library(tidyverse)
